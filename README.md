@@ -2,7 +2,7 @@
 
 Fork and clone this repo. On your fork, answer and commit the follow questions. When you are finished, submit the link to your repo on Canvas.
 
-## Question 1
+## Question 1     
 
 You are given a string stored in variable `problem`. Write code so that you print each word of the string on a new line.
 
@@ -11,7 +11,6 @@ var problem = "split this string into words and print them on separate lines"
 
 // Your code
 ```
-
 Example
 
 Input:
