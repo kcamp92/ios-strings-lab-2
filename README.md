@@ -30,7 +30,18 @@ on
 separate
 lines
 ```
+var sentence = "split this string into words and print them on separate lines "
+var space = " "
+var currentWord = ""
 
+for character in sentence {
+if String (character) == space {
+print(currentWord)
+currentWord = ""
+continue
+}
+currentWord += String(character)
+}
 
 ## Question 2
 
@@ -52,6 +63,12 @@ Sample Input: `"Swift is the best language"`
 
 Sample Output: `"language best the is Swift"`
 
+let string = "Swift is the best language"
+var myString = "Swift is the best language"
+
+myString = String(string.reversed())
+print(myString)
+
 
 ## Question 4
 
@@ -62,6 +79,21 @@ Example:
 Sample Input: `"danaerys dad cat civic bottle"`
 
 Sample Output: `2`
+
+let string = "danaerys dad cat civic bottle"
+var stringComponents = string.components(separatedBy: " ")
+var count = 0
+
+var reversedString = String(string.reversed())
+string == reversedString
+
+for i in stringComponents {
+if  i == String(i.reversed()) {
+count += 1
+}
+
+}
+print(count)
 
 
 ## Question 5
